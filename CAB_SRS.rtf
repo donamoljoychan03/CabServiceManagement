@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\b\f0\fs36\lang9 CAB SERVICE MANAGEMENT\par
+
+\pard\sa200\sl276\slmult1\qj\ulnone\fs24\par
+\par
+INTRODUCTION\b0\par
+'Cab Service Management System' is the application used to manage the entire service of Cab booking company. This system greatly simplifies the cab booking process for the customers. System presents an interactive and up-to-date menu with all available options in an easy to use manner. This system helps users to grab cab by accessing their location which reduces the time required for other means of cab services. Also helps the cab drivers to increase their profit when the nearest customers chooses them.\par
+ \b PURPOSE OF DOCUMENT\par
+\b0 The purpose of this document is that it will provide a detailed description about the system. \par
+\par
+\b ABOUT THE ORGANISATION\par
+\b0 The main objective of this system is to give provision to the cab booking company owner to flourish their business by put together all the cab drivers in an single system.\b\par
+\par
+ACTORS\b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Admin\par
+{\pntext\f1\'B7\tab}User\par
+{\pntext\f1\'B7\tab}Cab drivers\par
+
+\pard\sa200\sl276\slmult1\qj\fs22\par
+\b\fs24 FUNCTIONALITIES\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0 Registration and login.\par
+{\pntext\f1\'B7\tab}User verification.\par
+{\pntext\f1\'B7\tab}Location tracing.\par
+{\pntext\f1\'B7\tab}Cab searching.\par
+{\pntext\f1\'B7\tab}Booking.\par
+{\pntext\f1\'B7\tab}Payment.\par
+{\pntext\f1\'B7\tab}Notification.\par
+{\pntext\f1\'B7\tab}Cab cancellation.\par
+{\pntext\f1\'B7\tab}Rating and review.\par
+{\pntext\f1\'B7\tab}Delete account.\par
+
+\pard\sa200\sl276\slmult1\qj\fs22\par
+\b\fs28\par
+REQUIREMENT\par
+\fs22 USER REQUIREMENT : \b0\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Registration page \b0 : Page which user can register themselves. Registration page contain logo, and fields to add name, email, phone number, enter password, confirm password and register button. After clicking on register button the data entered by the user will save on the database if the phone number is already exist in data base then shows message 'already have an account with this phone number'.\par
+{\pntext\f1\'B7\tab}\b User verification \b0 : Verification is for makeing sure that the user is exactly who they are supposed to be. Once the user is add the number in the field given and click send otp button an otp is sendes to the entered phone number and after adding otp to the field where it is enter and click the verify button the user is verified in the database if and only if the entered otp is correct as the sended otp from the system otherwise the screen shows 'incorrect otp, please enter correct otp'.\par
+{\pntext\f1\'B7\tab}\b Permission access \b0 : Asking the user about the permissions in their gadget which should be enabled for the functioning of the system. In this screen the privacy terms and policies are given and and a check box which should user agree after reading the privacy and policy the permission requirements. there is an allow button and deny button which user can select if they want to allow or deny permission.\par
+{\pntext\f1\'B7\tab}\b Login page\b0  : In login page user should enter their username and password, then click the login button and the system verifies is the entered username and password is correct. If it is correct the user redirects to home page otherwise shows the message 'invalid username or password'. There is also a forgot password option which redirect the user to another page to recover password.\par
+{\pntext\f1\'B7\tab}\b Password recovery \b0 : User should enter their registered phone number in the field for phone number and then click on the submit button then an otp sends to the phone number. User can enter the otp and click on recover password button then the password is send to registered phone number of the user. There is a login button which allows the user to redirect to the login page to continue login process.\par
+{\pntext\f1\'B7\tab}\b Home page \b0 : Home page of the user is the page which user entered after click the login button in the login page. The data fetch from the database and shows the user which is correspond to the username and password. Access the functionalities such as profile, search, notification, payment, system logo, about (app information).\par
+{\pntext\f1\'B7\tab}\b Profile \b0 : User can add and edit their phone number (there is a verifiction otp verification done like the time of registraion) name, email, password (They are optional). Also user can delete their account.\par
+{\pntext\f1\'B7\tab}\b Searching\b0  : This helps user to search cab availibility thus they can book cab. User can search cab by model, location. There is given the types of cab in search page and also they can search by giving their current location and destination once they on location then they can see the nearest cabs. Once the location is on then the user can enter their destination thus user can able to see the rate of each type of cab in there nearest location.\par
+{\pntext\f1\'B7\tab}\b Notification : \b0 In notification page the user can see the notification about their booked cab and common notifications for the users from the management side. When the user books the cab the driver get a notification did he/she wants to accept the booking. If the driver is ready to accept the drive then they should choose the acceot button. When the driver accepts the request then a notification will be received by the user. If the driver denys the notification then the user will receive the message that 'this cab is unavailable right now'. \par
+{\pntext\f1\'B7\tab}\b Payment \b0 : This page allows the user to make payment for the cab they had booked. This page have various payment options such as cash, e-payment (gpay, phone pay, paytm, pay through bank payment apps). Once the user selected the payment option then the page redirects according to the payment method they choose.\par
+
+\pard\sa200\sl276\slmult1\qj\tab Cash - User can pay after completing the ride directly to the cab driver. To get an invoice \tab the user should enter an unique code of the cab which needs the system to ensure that the \tab user completed the payment.\par
+
+\pard\sa200\sl276\slmult1\qj\tx142\tab\tab E-payment - When the user select the upi app and click on the proceed payment button \tab\tab\tab the page will redirect to the app and thus the user can make payment through the apps. \tab\tab\tab Once the payment has done that data will save on database thus the invoice can be \tab\tab\tab created.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\tx142\b Invoice\b0  : Invoice is the commercial document delivered by the user to the service delivered. After the payment done there is an button which user can click to get their invoice. The invoice document contain the details they have travelled such as, time, distance, depature and arrival, cab number, amount they have paid, normal rate per kilometer, tax details all are the above details should be fetched from the database.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Deleting account \b0 : User can delete their account whenever they want. To delete their account there is an button in the profile page 'delete account'. Once the user request to delete their account then system ask conformation by asking the user to enter their password. The user can delete account permanently if and only if they are entered their password correctly in the field and click delete button. As per the systems privacy policy the data of user will not be deleted from the server.\par
+
+\pard\sa200\sl276\slmult1\qj\par
+\b CAB DRIVERS REQUIREMENT \b0 : \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Registration page \b0 : Registration page for drivers will help drivers to register themselves in the system. Drivers should add name, phone number, email id, enter password, confirm password and register button. The system will check the entered creditionals ( lisence number, email, number ) are valid or not if it is not valid shows 'enter correct lisence number, email, number ' message if it is correct then shows 'valid lisence number, email, number' message email and phone number will validate when they enter on the time of registration. \par
+{\pntext\f1\'B7\tab}\b User verification \b0 : Verification is for makeing sure that the user is exactly who they are supposed to be. Once the driver is add the number in the field given and click send otp button an otp is sendes to the entered phone number and after adding otp to the field where it is enter and click the verify button the user is verified in the database if and only if the entered otp is correct as the sended otp from the system otherwise the screen shows 'incorrect otp, please enter correct otp'.\par
+{\pntext\f1\'B7\tab}\b Permission access \b0 : Asking the user about the permissions in their gadget which should be enabled for the functioning of the system. In this screen the privacy terms and policies are given and and a check box which should driver agree after reading the privacy and policy the permission requirements. There is an allow button and deny button which user can select if they want to allow or deny permission. Also the driver should enable the location access it is compulsory to access the system.\par
+{\pntext\f1\'B7\tab}\b Login page\b0  : In login page user should enter their username and password, then click the login button and the system verifies is the entered username and password is correct. If it is correct the user redirects to home page otherwise shows the message 'invalid username or password'. There is also a forgot password option which redirect the user to another page to recover password.\par
+{\pntext\f1\'B7\tab}\b Password recovery \b0 : User should enter their registered phone number in the field for phone number and then click on the submit button then an otp sends to the phone number. User can enter the otp and click on recover password button then the password is send to registered phone number of the user. There is a login button which allows the user to redirect to the login page to continue login process.\par
+{\pntext\f1\'B7\tab}\b Home page \b0 : Home page of the driver is the page which he/she entered after click the login button in the login page. The data fetch from the database and shows the user which is correspond to the username and password. Access the functionalities such as profile, notification, payment, system logo, about (app information).\par
+{\pntext\f1\'B7\tab}\b Profile\b0  : Driver can add and edit their phone number (there is a verifiction otp verification done like the time of registraion) name, email, password (They are optional). Also driver can delete their account. The driver should enter their profile picture. Also they can see their rating, name, cab number, licence id,\par
+{\pntext\f1\'B7\tab}\b Notification\b0  : The notification in the system allows the drivers to view if anyone booked their cab and its location. When the user books the cab the driver get a notification did he/she wants to accept the booking. If the driver is ready to accept the drive then they should choose the acceot button. When the driver accepts the request then a notification will be received by the user. If the driver denys the notification then the user will receive the message that 'this cab is unavailable right now'. \par
+{\pntext\f1\'B7\tab}\b Deleting account \b0 : Driver can delete their account whenever they want. To delete their account there is an button in the profile page 'delete account'. Once the driver request to delete their account then system ask conformation by asking the driver to enter their password. The driver can delete account permanently if and only if they are entered their password correctly in the field and click delete button. As per the systems privacy policy the data of driver will not be deleted from the server.\par
+
+\pard\sa200\sl276\slmult1\qj\b ADMIN REQUIREMENTS \b0 : \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Login page \b0 : Admin can login into the system through login page by entering admin username and password and there is also a logion button. If the entered username and password is correct the admin redirects to home page otherwise shows the message 'invalid username or password'. There is also a forgot password option which redirect the admin to another page to recover password.\par
+{\pntext\f1\'B7\tab}\b Home page \b0 : Admin have the home page which he can access all functionality management in the system. There is options to select admin profile, manage user, manage drivers, \par
+{\pntext\f1\'B7\tab}\b Manage users \b0 : Admin have the provisions to :-\par
+
+\pard\sa200\sl276\slmult1\qj\tab\tab  Delete the accounts of user and driver from the database.\par
+\tab\tab See all transaction details.\par
+\b CONCLUSION\par
+\b0\fs24 'Cab Service Management System' is the application used to manage the entire service of Cab booking company. This system greatly simplifies the cab booking process for the customers. System presents an interactive and up-to-date menu with all available options in an easy to use manner. This system helps users to grab cab by accessing their location which reduces the time required for other means of cab services. Also helps the cab drivers to increase their profit when the nearest customers chooses them.\par
+\b\fs22\par
+\b0\par
+\tab\tab\par
+\tab\tab\par
+\b\fs28\par
+}
+ 
